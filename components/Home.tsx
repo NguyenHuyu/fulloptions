@@ -101,7 +101,7 @@ export default function Home() {
       <div className='flex justify-center flex-col items-center bg-[#061629] h-[70vh] md:h-[90vh] text-left space-y-10'>
         <h2 className='text-center text-3xl md:text-5xl'>WE ARE COMPLETE SOLUTION FOR EVERY IDEA</h2>
         <p className='text-xl font-light'>
-          We are confident that you will find great things here. Let's explore and experience with us!
+          We are confident that you will find great things here. Lets explore and experience with us!
         </p>
         <Link href='project'>
           <div className='p-8 py-16 rounded-full bg-red-900'>View project</div>
