@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} bg-gradient-to-r from-slate-900 to-slate-700 text-white`}>
+      <body className={`${inter.className} w-full bg-gradient-to-r from-slate-900 to-slate-700 text-white`}>
         <NextUiProviders>
           <section className='flex flex-col'>
             <Navbars />
-            <div className='h-screen w-screen'>{children}</div>
+            <div className=''>{children}</div>
           </section>
         </NextUiProviders>
       </body>

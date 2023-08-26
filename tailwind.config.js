@@ -11,6 +11,13 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    fontFamily: {
+      sans: ['ui-sans-serif', 'system-ui'],
+      serif: ['ui-serif', 'Georgia'],
+      mono: ['ui-monospace', 'SFMono-Regular'],
+      display: ['Oswald'],
+      body: ['"Open Sans"']
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -71,7 +78,12 @@ module.exports = {
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        acb: '1s ease-in-out 0.3s 1 forwards'
+      },
+      backgroundImage: {
+        aaa: "url('/img.html')",
+        'footer-texture': "url('/img/footer-texture.png')"
       }
     }
   },

@@ -66,11 +66,37 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+.marquee-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
   }
-  body {
-    @apply bg-background text-foreground;
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card {
+  @apply p-4 shadow-md rounded-lg  md:w-60;
+}
+
+.grid-container {
+  @apply flex overflow-x-auto md:overflow-hidden; /* Sử dụng flex và overflow-x-auto */
+}
+
+/* Loại bỏ một số thiết lập grid cho màn hình mobile */
+@media (min-width: 768px) {
+  .grid-container {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto md:max-w-6xl;
   }
 }
