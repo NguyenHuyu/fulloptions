@@ -273,10 +273,10 @@ export default function Home() {
         <Image src='/ima2.jpg' width={10000} height={10000} alt='hahah' className=' absolute h-[70vh] md:h-full' />
         <div className='absolute'>
           <p className='text-[#20c781] text-[2rem]'>TEAM</p>
-          <p className='md:text-5xl text-3xl'>Our Professional Team</p>
+          <p className='md:text-5xl text-xl'>Our Professional Team</p>
           <div className='pt-10'>
             {images?.length > 0 && (
-              <div className='max-w-screen slider flex '>
+              <div className='max-w-screen  flex '>
                 <Carousel
                   className='max-w-screen'
                   selectedItem={currentIndex}
@@ -293,7 +293,7 @@ export default function Home() {
                       key={index}
                       className='max-h-[300px] gap-10 flex flex-col max-w-xs mx-auto justify-center items-center md:max-h-[600px] lg:max-h-[60vh]'
                     >
-                      <div className=' text-[1rem] md:text-[1rem] object-cover  duration-200 transition-opacity text-center'>
+                      <div className=' text-[0.7rem] md:text-[1rem] object-cover  duration-200 transition-opacity text-center'>
                         {imageUrl.title}
                       </div>
                       <div className='flex items-center gap-2'>
