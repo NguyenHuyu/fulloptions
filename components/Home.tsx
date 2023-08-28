@@ -269,14 +269,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='relative flex flex-col  pt-96 items-center  justify-center md:h-screen bg-[#061629] text-center space-y-10  '>
+      <div className='relative w-full flex flex-col  pt-96 items-center  justify-center md:h-screen bg-[#061629] text-center space-y-10  '>
         <Image src='/ima2.jpg' width={10000} height={10000} alt='hahah' className=' absolute h-[70vh] md:h-full' />
         <div className='absolute'>
           <p className='text-[#20c781] text-[2rem]'>TEAM</p>
           <p className='md:text-5xl text-xl'>Our Professional Team</p>
           <div className='pt-10'>
             {images?.length > 0 && (
-              <div className='max-w-screen  flex '>
+              <div className='max-w-screen slider flex '>
                 <Carousel
                   className='max-w-screen'
                   selectedItem={currentIndex}
@@ -291,9 +291,9 @@ export default function Home() {
                   {images.map((imageUrl: any, index: any) => (
                     <div
                       key={index}
-                      className='max-h-[300px] gap-10 flex flex-col max-w-xs mx-auto justify-center items-center md:max-h-[600px] lg:max-h-[60vh]'
+                      className='max-h-[300px] gap-10 flex flex-col max-w-full  mx-auto justify-center items-center md:max-h-[600px] lg:max-h-[60vh]'
                     >
-                      <div className=' text-[0.7rem] md:text-[1rem] object-cover  duration-200 transition-opacity text-center'>
+                      <div className='max-w-md text-[0.7rem] md:text-[0.8rem] object-cover  duration-200 transition-opacity text-center'>
                         {imageUrl.title}
                       </div>
                       <div className='flex items-center gap-2'>
